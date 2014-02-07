@@ -4,6 +4,7 @@ when "smartos"
     default['paths']['lib_path'] = "/system/lib:/system/usr/lib:/usr/local/lib"
     default['paths']['bin_path'] = "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin"
     default['paths']['bin_dir']  = "/usr/local/bin"
+    default['paths']['etc_dir']  = "/usr/local/etc"
   else
     default['paths']['lib_path'] = "/lib:/usr/lib:/opt/local/lib:/opt/gcc/lib"
     default['paths']['bin_path'] = "/opt/local/bin:/opt/local/sbin:/usr/bin:/usr/sbin"
