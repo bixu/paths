@@ -1,6 +1,6 @@
 case platform
 when "smartos"
-  if system("modinfo | grep sngl 2>&1 > /dev/null")
+  if system("grep sngl /etc/product 2>&1 > /dev/null")
     default['paths']['lib_path'] = "/system/lib:/system/usr/lib:/usr/local/lib"
     default['paths']['bin_path'] = "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin"
     default['paths']['bin_dir']  = "/usr/local/bin"
